@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livres scolaires</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 2.3em;
+      letter-spacing: 1.5px;
+      color: #ffd700;
+      text-shadow: 1px 2px 8px #000a;
+    }
+
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      margin: 48px 0 32px 0;
+    }
+
+    .book {
+      background: #222;
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(245, 245, 220, 0.18);
+      padding: 18px 14px 14px 14px;
+      width: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+
+    .book:hover {
+      transform: translateY(-7px) scale(1.035);
+      box-shadow: 0 8px 32px rgba(245, 245, 220, 0.32);
+    }
+
+    .book img {
+      width: 170px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 13px;
+      box-shadow: 0 2px 12px #deb88780;
+    }
+
+    .book-title {
+      font-size: 1.08em;
+      margin-bottom: 7px;
+      font-weight: bold;
+      color: #ffe;
+      text-align: center;
+    }
+
+    .book a {
+      color: #ffd700;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .book a:hover {
+      color: #fffbe0;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .book-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .book {
+        width: 90vw;
+        max-width: 320px;
+      }
+
+      .book img {
+        width: 80vw;
+        max-width: 220px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Livres scolaires</h1>
+
+  <div class="book-list">
+    <div class="book">
+      <a href="./manuel-6éme.html">
+        <img src="./image-6éme/livre-générale-6éme.webp" alt="livre scolaire 6ème">
+        <div class="book-title">Livre scolaire 6ème</div>
+      </a>
+    </div>
+
+    <div class="book">
+      <a href="./manuel-5éme.html">
+        <img src="./manuelle-5éme-g.jpg" alt="livre scolaire 5ème">
+        <div class="book-title">Livre scolaire 5ème</div>
+      </a>
+    </div>
+
+    <div class="book">
+      <a href="./manuel-4éme.html">
+        <img src="./Tout-le-programme-4e-g.jpg" alt="livre scolaire 4ème" style="height:250px;">
+        <div class="book-title">Livre scolaire 4ème</div>
+      </a>
+    </div>
+
+    <div class="book">
+      <a href="./manuel-3éme.html">
+        <img src="./image-3éme/livre-scolaire-6éme-g.webp" alt="livre scolaire 3ème">
+        <div class="book-title">Livre scolaire 3ème</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

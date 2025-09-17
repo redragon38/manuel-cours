@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livre scolaire 4ème</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .book {
+            background: #222;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(245, 245, 220, 0.2);
+            padding: 20px 15px 15px 15px;
+            width: 220px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .book:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(245, 245, 220, 0.4);
+        }
+        .book img {
+            width: 180px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 12px #deb88780;
+        }
+        .book-title {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .book a {
+            color: #ffe;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .book a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .book-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Livre scolaire 3ème</h1>
+    <div class="book-list">
+        <div class="book">
+            <a href="https://www.lelivrescolaire.fr/manuels/histoire-geographie-emc-3eme-2016" target="_blank">
+                <img src="./image-3éme/histoire.jpg" alt="livre histoire-géo-emc 4ème">
+                <div class="book-title">Histoire-Géo-EMC</div>
+            </a>
+        </div>
+        <div class="book">
+            <a href="https://www.lelivrescolaire.fr/manuels/francais-3eme-2016" target="_blank">
+                <img src="./image-3éme/français.webp" alt="livre français 4ème">
+                <div class="book-title">Français</div>
+            </a>
+        </div>
+        <div class="book">
+            <a href="https://www.lelivrescolaire.fr/manuels/mathematiques-3eme-2021" target="_blank">
+                <img src="./image-3éme/math.webp" alt="livre mathématiques 4ème">
+                <div class="book-title">Mathématiques</div>
+            </a>
+        </div>
+        <div class="book">
+            <a href="https://www.lelivrescolaire.fr/manuels/sciences-de-la-vie-et-de-la-terre-3eme-2017" target="_blank">
+                <img src="image-3éme/sience.jpg" alt="livre sciences 4ème">
+                <div class="book-title">Sciences</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
