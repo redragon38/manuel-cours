@@ -3,27 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Style</title>
+
+  <title>Manuel Cours</title>
 
   <style>
     body {
-      background: black;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
       color: white;
-      font-size: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding-top: 50px;
+      padding: 40px 20px;
     }
 
-    .test {
-      background: red;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .item {
       padding: 20px;
-      border-radius: 10px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      transition: 0.2s;
+      border: 1px solid #333;
+    }
+
+    .item:hover {
+      background: #292929;
+      transform: translateY(-4px);
     }
   </style>
 </head>
+
 <body>
 
-  <div class="test">Si tu vois ce carré rouge → le style fonctionne.</div>
+  <h1>📘 Manuel Cours</h1>
+  <p>Choisis ton niveau pour accéder au manuel.</p>
+
+  <div class="container">
+    <a class="item" href="manuel-6ème.html">Manuel 6ème</a>
+    <a class="item" href="manuel-5ème.html">Manuel 5ème</a>
+    <a class="item" href="manuel-4ème.html">Manuel 4ème</a>
+    <a class="item" href="manuel-3ème.html">Manuel 3ème</a>
+    <a class="item" href="manuel-2nd.html">Manuel 2nde</a>
+  </div>
 
 </body>
 </html>
